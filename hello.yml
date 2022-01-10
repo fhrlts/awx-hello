@@ -2,4 +2,4 @@
   gather_facts: no
   tasks:
   - name: Hello World!
-    shell: echo "Hi! Tower is working." >> hello.txt
+    shell: echo Hi! Tower is working. >> hello.txt
