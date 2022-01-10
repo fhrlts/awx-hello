@@ -1,0 +1,7 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: install the latest version of net-tools
+    yum:
+      name: net-tools
+      state: latest

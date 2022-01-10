@@ -1,0 +1,7 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: install the latest version of nano
+    yum:
+      name: nano
+      state: latest
