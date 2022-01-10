@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: fahri
   gather_facts: no
   tasks:
   - name: install the latest version of nano
