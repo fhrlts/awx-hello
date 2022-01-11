@@ -4,5 +4,4 @@
   - name: change python 2
     community.general.alternatives:
       name: python
-      extra_args: --config
-      value: 1
+      path: /usr/bin/python2.7
