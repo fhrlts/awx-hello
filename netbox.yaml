@@ -10,7 +10,7 @@
      copy:
        src: /tmp/netbox-docker/docker-compose.override.yml.example
        dest: /tmp/netbox-docker/docker-compose.override.yml
-     become: yes
+     
   
    - name: Docker Pull Images
      docker_compose:
