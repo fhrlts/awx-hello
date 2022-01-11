@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: change python 2
+    alternatives:
+      name: python
+      path: /usr/bin/python2.7

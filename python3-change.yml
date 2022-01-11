@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: change python 3
+    alternatives:
+      name: python
+      path: /usr/bin/python3.6
