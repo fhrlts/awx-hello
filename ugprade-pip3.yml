@@ -2,6 +2,6 @@
   gather_facts: no
   tasks:
   - name: upgrade pip
-    pip3:
+    pip:
       name: setuptools pip
       extra_args: --upgrade
