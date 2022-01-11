@@ -1,4 +1,4 @@
-- hosts: 10.2.246.131
+- hosts: all
   gather_facts: no
   tasks:
   - name: install the latest version of nano
