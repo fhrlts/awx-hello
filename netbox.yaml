@@ -1,0 +1,22 @@
+- hosts: testing
+  gather_facts: no
+  vars:
+  tasks:
+   - name: Clone Git Repository
+     git:
+      repo: 'https://github.com/netbox-community/netbox-docker.git'
+      dest: /tmp/netbox-docker
+   - name: copy config netbox
+     copy:
+       src: /tmp/netbox-docker/docker-compose.override.yml.example
+       dest: /tmp/netbox-docker/docker-compose.override.yml
+  
+   - name: Docker Pull Images
+     docker_compose:
+        project_src: /tmp/netbox-docker/
+        state: absent
+        pull: yes
+
+   - name: Create and start services Netbox
+     docker_compose:
+       project_src: /tmp/netbox-docker/
