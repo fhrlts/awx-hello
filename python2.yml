@@ -3,6 +3,6 @@
   tasks:
   - name: change python 2
     update_alternatives:
-      extra_args: --config
       name: python
+      extra_args: --config
       value: 1
