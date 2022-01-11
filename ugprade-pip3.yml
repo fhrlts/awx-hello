@@ -3,5 +3,5 @@
   tasks:
   - name: upgrade pip
     pip3:
-      name: --upgrade setuptools pip
-      state: latest
+      name: setuptools pip
+      extra_args: --upgrade
