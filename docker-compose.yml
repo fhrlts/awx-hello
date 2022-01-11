@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Install docker-compose
+    pip:
+      name: docker-compose
+      state: latest
