@@ -10,6 +10,7 @@
      copy:
        src: /tmp/netbox-docker/docker-compose.override.yml.example
        dest: /tmp/netbox-docker/docker-compose.override.yml
+       remote_src: yes
      
   
    - name: Docker Pull Images
