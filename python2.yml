@@ -5,3 +5,4 @@
     update-alternatives:
       name: python
       extra_args: --config
+      value: 1
