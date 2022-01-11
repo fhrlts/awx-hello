@@ -2,7 +2,7 @@
   gather_facts: no
   tasks:
   - name: change python 2
-    update-alternatives:
+    update_alternatives:
       extra_args: --config
       name: python
       value: 1
