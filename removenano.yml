@@ -1,0 +1,8 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Remove repository from a specific repo file
+    yum_repository:
+      name: nano
+      file: external_repos
+      state: absent
