@@ -8,8 +8,8 @@
       dest: /tmp/netbox-docker
    - name: copy config netbox
      copy:
-       remote_src: /tmp/netbox-docker/docker-compose.override.yml.example
-       remote_dest: /tmp/netbox-docker/docker-compose.override.yml
+       src: /tmp/netbox-docker/docker-compose.override.yml.example
+       dest: /tmp/netbox-docker/docker-compose.override.yml
      become: yes
   
    - name: Docker Pull Images
